@@ -27,6 +27,6 @@ typedef enum {
 }logs_types;
 
 
-void log_setup(bool is_runing, logs_types* condition);
+static void log_setup(bool is_runing, logs_types condition, char message[255]);
 
-void print(const char* condition, bool is_error);
+static void print(const char* conditions, bool is_error);
